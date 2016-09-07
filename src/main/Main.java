@@ -16,8 +16,6 @@ public class Main {
 
         Person q = new Person("Petrov");
         q.age = 30;
-//        q.fio = "Petrov";
-//        q.address = new Address();
         q.address.city = "Kiev";
 
         int[] a;
@@ -27,11 +25,22 @@ public class Main {
 
         double[][] x;
 
-        Person[] persons = new Person[3];
+        Person[] persons = new Person[5];
         persons[0] = p;
         persons[1] = q;
         persons[2] = new Person("Sidorov");
 //        persons[2].address = new Address();
         persons[2].address.city = "Odessa";
+
+        persons[3] = new Person("Titov");
+        persons[4] = new Person("Petrenko");
+
+        for (int i=0; i<persons.length; i++) {
+            System.out.println(persons[i].fio);
+        }
+        System.out.println("-------------");
+        for (Person person : persons) {
+            System.out.println(person);
+        }
     }
 }

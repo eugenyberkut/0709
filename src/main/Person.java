@@ -12,4 +12,9 @@ public class Person {
         this.fio = fio;
         address = new Address();
     }
+
+    @Override
+    public String toString() {
+        return "Person(" + fio +")";
+    }
 }
